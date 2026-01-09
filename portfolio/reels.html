@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reels - Abhi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Abhi's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="reels.html">Reels</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Reels Section -->
+    <section id="reels">
+        <div class="container">
+            <h2>My Reels</h2>
+            <div class="reels-grid">
+                <div class="reel-card">
+                    <a href="https://www.instagram.com/reel/DSkrJk4EtzB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+                        <video autoplay muted loop>
+                            <source src="videos/reel1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </a>
+                    <button class="sound-btn">🔊 Enable Sound</button>
+                    <h3>Reel 1</h3>
+                    <p>An engaging short video showcasing creative content and storytelling.</p>
+                    <a href="https://www.instagram.com/reel/DSkrJk4EtzB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="btn primary">View on Instagram</a>
+                </div>
+                <div class="reel-card">
+                    <a href="https://www.instagram.com/reel/DSm04pAEn__/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+                        <video autoplay muted loop>
+                            <source src="videos/reel2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </a>
+                    <button class="sound-btn">🔊 Enable Sound</button>
+                    <h3>Reel 2</h3>
+                    <p>A fun and dynamic reel highlighting innovative ideas and visuals.</p>
+                    <a href="https://www.instagram.com/reel/DSm04pAEn__/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="btn primary">View on Instagram</a>
+                </div>
+                <div class="reel-card">
+                    <a href="https://www.instagram.com/reel/DSg0PI-Em6b/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+                        <video autoplay muted loop>
+                            <source src="videos/reel3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </a>
+                    <button class="sound-btn">🔊 Enable Sound</button>
+                    <h3>Reel 3</h3>
+                    <p>Captivating moments captured in this inspiring reel series.</p>
+                    <a href="https://www.instagram.com/reel/DSg0PI-Em6b/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" class="btn primary">View on Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Abhi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const videos = document.querySelectorAll('#reels video');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.play();
+                } else {
+                    entry.target.pause();
+                }
+            });
+        }, { threshold: 0.5 });
+
+        videos.forEach(video => {
+            observer.observe(video);
+        });
+
+        // Sound toggle buttons
+        const soundBtns = document.querySelectorAll('.sound-btn');
+        soundBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const video = btn.previousElementSibling.querySelector('video');
+                video.muted = !video.muted;
+                btn.textContent = video.muted ? '🔊 Enable Sound' : '🔇 Mute Sound';
+            });
+        });
+    </script>
+</body>
+</html>
