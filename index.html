@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek — Tech Creator & AI Enthusiast</title>
+  <meta name="description" content="Abhishek is a tech content creator passionate about AI, automation, and building amazing digital experiences. Follow @abhitechdecoded for tech reels." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+</head>
+<body>
+
+  <!-- Animated Background Orbs -->
+  <div class="bg-particles">
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+  </div>
+
+  <div class="main-container">
+
+    <!-- Header / Branding -->
+    <header class="site-header animate-in">
+      <div class="site-logo">
+        <img src="assets/logo.jpg" alt="AbhiTech Decoded Logo" class="logo-img" />
+        <span class="logo-text">AbhiTech <span>Decoded</span></span>
+      </div>
+    </header>
+
+    <!-- ===== NAVIGATION TABS ===== -->
+    <nav class="nav-tabs" id="mainNav">
+      <button class="nav-tab active" data-tab="home" id="nav-home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z"/></svg>
+        <span class="tab-text">Home</span>
+      </button>
+      <button class="nav-tab" data-tab="skills" id="nav-skills">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+        <span class="tab-text">Skills</span>
+      </button>
+      <button class="nav-tab" data-tab="reels" id="nav-reels">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+        <span class="tab-text">Reels</span>
+      </button>
+      <button class="nav-tab" data-tab="contact" id="nav-contact">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <span class="tab-text">Contact</span>
+      </button>
+    </nav>
+
+
+    <!-- ============================== -->
+    <!-- ========== HOME TAB ========== -->
+    <!-- ============================== -->
+    <section class="section active" id="section-home">
+
+      <!-- Hero Card -->
+      <div class="hero-card">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Open to work
+          </div>
+          <p class="hero-subtitle">Tech Creator & AI Enthusiast</p>
+          <h1 class="hero-name">Abhishek</h1>
+          <p class="hero-description">
+            Passionate about cutting-edge technologies and AI automations. I decode complex tech into simple, engaging content — from building websites with AI to crafting viral reels that make tech accessible to everyone.
+          </p>
+          <div class="hero-actions">
+            <a href="https://www.instagram.com/abhitechdecoded/" target="_blank" class="btn btn-primary" id="btn-instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+              Follow on Instagram
+            </a>
+            <button class="btn btn-secondary" id="btn-view-skills" onclick="switchTab('skills')">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              View Skills
+            </button>
+            <button class="btn btn-secondary" id="btn-view-reels" onclick="switchTab('reels')">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              Watch Reels
+            </button>
+          </div>
+        </div>
+        <div class="hero-image-wrap">
+          <img src="assets/logo.jpg" alt="Abhishek Portrait" class="hero-img" />
+          <div class="hero-img-glow"></div>
+        </div>
+      </div>
+
+      <!-- Intro Cards -->
+      <div class="intro-grid">
+        <div class="card animate-in delay-1">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3>Tech Explorer</h3>
+          <p>Always on the lookout for the latest in technology, AI tools, and digital automation. I love experimenting with new platforms and finding creative ways to leverage them.</p>
+        </div>
+        <div class="card animate-in delay-2">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          </div>
+          <h3>Content Creator</h3>
+          <p>Creating engaging tech reels and short-form videos that break down complex topics. From AI automations to website building — making tech simple and fun for everyone.</p>
+        </div>
+        <div class="card card-full animate-in delay-3">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3>What I Do</h3>
+          <p>I bridge the gap between complex technology and everyday users. Through my Instagram reels at <strong style="color: var(--accent);">@abhitechdecoded</strong>, I share practical tips on AI tools, automation workflows, website building, and content creation. My mission is to empower people with technology — no coding degree required.</p>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <!-- ================================ -->
+    <!-- ========== SKILLS TAB ========== -->
+    <!-- ================================ -->
+    <section class="section" id="section-skills">
+      <div class="section-header">
+        <h2>My <span>Skills</span> & Expertise</h2>
+        <p>Tools and technologies I use to create content, build websites, and automate workflows.</p>
+      </div>
+
+      <!-- Scrolling Marquee -->
+      <div class="marquee-wrap">
+        <div class="marquee-track">
+          <div class="marquee-item"><span class="emoji">🤖</span> AI Automation</div>
+          <div class="marquee-item"><span class="emoji">🌐</span> Website Building</div>
+          <div class="marquee-item"><span class="emoji">🎬</span> Reel Editing</div>
+          <div class="marquee-item"><span class="emoji">🎨</span> Poster Design</div>
+          <div class="marquee-item"><span class="emoji">✂️</span> Short Form Content</div>
+          <div class="marquee-item"><span class="emoji">📱</span> Social Media</div>
+          <div class="marquee-item"><span class="emoji">🔧</span> Google Pomelo</div>
+          <div class="marquee-item"><span class="emoji">💡</span> AI Prompting</div>
+          <div class="marquee-item"><span class="emoji">📸</span> Canva Design</div>
+          <div class="marquee-item"><span class="emoji">📊</span> SEO Basics</div>
+          <!-- Duplicate for seamless loop -->
+          <div class="marquee-item"><span class="emoji">🤖</span> AI Automation</div>
+          <div class="marquee-item"><span class="emoji">🌐</span> Website Building</div>
+          <div class="marquee-item"><span class="emoji">🎬</span> Reel Editing</div>
+          <div class="marquee-item"><span class="emoji">🎨</span> Poster Design</div>
+          <div class="marquee-item"><span class="emoji">✂️</span> Short Form Content</div>
+          <div class="marquee-item"><span class="emoji">📱</span> Social Media</div>
+          <div class="marquee-item"><span class="emoji">🔧</span> Google Pomelo</div>
+          <div class="marquee-item"><span class="emoji">💡</span> AI Prompting</div>
+          <div class="marquee-item"><span class="emoji">📸</span> Canva Design</div>
+          <div class="marquee-item"><span class="emoji">📊</span> SEO Basics</div>
+        </div>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-grid">
+
+        <!-- Skill 1: AI Website Building -->
+        <div class="skill-card animate-in delay-1" id="skill-website">
+          <div class="skill-icon-wrap ai">🌐</div>
+          <h3>AI Website Building</h3>
+          <p>Creating stunning, functional websites using AI-powered tools. From landing pages to full portfolios — built smarter, not harder.</p>
+          <span class="skill-tag">AI Tools</span>
+          <span class="skill-tag">Web Design</span>
+          <span class="skill-tag">No-Code</span>
+        </div>
+
+        <!-- Skill 2: Poster & Graphic Design -->
+        <div class="skill-card animate-in delay-2" id="skill-poster">
+          <div class="skill-icon-wrap design">🎨</div>
+          <h3>Poster & Graphic Design</h3>
+          <p>Designing eye-catching posters, thumbnails, and social media graphics using Canva, AI generators, and creative design principles.</p>
+          <span class="skill-tag">Canva</span>
+          <span class="skill-tag">Graphics</span>
+          <span class="skill-tag">Branding</span>
+        </div>
+
+        <!-- Skill 3: Google Pomelo Tool -->
+        <div class="skill-card animate-in delay-3" id="skill-pomelo">
+          <div class="skill-icon-wrap tools">🔧</div>
+          <h3>Google Pomelo Tool</h3>
+          <p>Leveraging Google's Pomelo tool for content creation and productivity. Mastering its features to streamline workflows and boost output quality.</p>
+          <span class="skill-tag">Google</span>
+          <span class="skill-tag">Productivity</span>
+        </div>
+
+        <!-- Skill 4: Reel Editing -->
+        <div class="skill-card animate-in delay-4" id="skill-reels">
+          <div class="skill-icon-wrap video">🎬</div>
+          <h3>Reel Editing & Production</h3>
+          <p>Editing engaging Instagram Reels with transitions, effects, music syncing, and storytelling techniques that grab attention in the first second.</p>
+          <span class="skill-tag">CapCut</span>
+          <span class="skill-tag">Transitions</span>
+          <span class="skill-tag">Hooks</span>
+        </div>
+
+        <!-- Skill 5: Short Form Content -->
+        <div class="skill-card animate-in delay-5" id="skill-shortform">
+          <div class="skill-icon-wrap content">✂️</div>
+          <h3>Short Form Clips Maker</h3>
+          <p>Transforming long-form content into viral short-form clips. Extracting the best moments, adding captions, and optimizing for maximum engagement.</p>
+          <span class="skill-tag">Repurposing</span>
+          <span class="skill-tag">Clips</span>
+          <span class="skill-tag">Viral</span>
+        </div>
+
+        <!-- Skill 6: AI Prompt Engineering -->
+        <div class="skill-card animate-in delay-6" id="skill-prompts">
+          <div class="skill-icon-wrap ai">💡</div>
+          <h3>AI Prompt Engineering</h3>
+          <p>Crafting effective prompts for ChatGPT, Gemini, and other AI tools to generate content, code, images, and automation scripts efficiently.</p>
+          <span class="skill-tag">ChatGPT</span>
+          <span class="skill-tag">Gemini</span>
+          <span class="skill-tag">Prompts</span>
+        </div>
+
+        <!-- Skill 7: Social Media Management -->
+        <div class="skill-card animate-in delay-1" id="skill-social">
+          <div class="skill-icon-wrap social">📱</div>
+          <h3>Social Media Management</h3>
+          <p>Growing and managing social media presence with strategic posting, hashtag research, audience engagement, and analytics-driven content planning.</p>
+          <span class="skill-tag">Instagram</span>
+          <span class="skill-tag">Growth</span>
+          <span class="skill-tag">Strategy</span>
+        </div>
+
+        <!-- Skill 8: Canva Design -->
+        <div class="skill-card animate-in delay-2" id="skill-canva">
+          <div class="skill-icon-wrap design">📐</div>
+          <h3>Canva Pro Design</h3>
+          <p>Creating professional designs using Canva — from Instagram stories and carousels to presentation decks and brand kits. Quick and polished results.</p>
+          <span class="skill-tag">Canva</span>
+          <span class="skill-tag">Templates</span>
+          <span class="skill-tag">Brand</span>
+        </div>
+
+        <!-- Skill 9: Video Thumbnails -->
+        <div class="skill-card animate-in delay-3" id="skill-thumbnails">
+          <div class="skill-icon-wrap video">🖼️</div>
+          <h3>Thumbnail Creation</h3>
+          <p>Designing click-worthy video thumbnails that boost CTR. Using contrast, typography, and emotion to create thumbnails that stand out in feeds.</p>
+          <span class="skill-tag">CTR</span>
+          <span class="skill-tag">Design</span>
+          <span class="skill-tag">YouTube</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================ -->
+    <!-- ========== REELS TAB ========== -->
+    <!-- ================================ -->
+    <section class="section" id="section-reels">
+      <div class="section-header">
+        <h2>Featured <span>Reels</span></h2>
+        <p>Check out my latest tech content on Instagram — AI tips, tool reviews, and automation hacks.</p>
+      </div>
+
+      <div class="reels-grid">
+        <!-- Reel 1 -->
+        <div class="reel-card animate-in delay-1" id="reel-1" onclick="toggleReel(this)">
+          <video src="assets/reel1.mp4" preload="auto" loop playsinline muted></video>
+          <div class="reel-play">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <div class="reel-overlay">
+            <h4>🤖 AI Automation Hacks</h4>
+            <span>Top 5 tools to automate your workflow</span>
+          </div>
+        </div>
+
+        <!-- Reel 2 -->
+        <div class="reel-card animate-in delay-2" id="reel-2" onclick="toggleReel(this)">
+          <video src="assets/reel2.mp4" preload="auto" loop playsinline muted></video>
+          <div class="reel-play">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <div class="reel-overlay">
+            <h4>🌐 Build Websites with AI</h4>
+            <span>Create a website in under 5 minutes</span>
+          </div>
+        </div>
+
+        <!-- Reel 3 -->
+        <div class="reel-card animate-in delay-3" id="reel-3" onclick="toggleReel(this)">
+          <video src="assets/reel3.mp4" preload="auto" loop playsinline muted></video>
+          <div class="reel-play">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <div class="reel-overlay">
+            <h4>✂️ Long to Short Form</h4>
+            <span>Turn any video into viral shorts</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Instagram CTA -->
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://www.instagram.com/abhitechdecoded/" target="_blank" class="btn btn-primary" id="btn-ig-profile" style="font-size: 1rem; padding: 16px 36px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 4H8a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4V8a4 4 0 00-4-4z"/><circle cx="12" cy="12" r="3"/><circle cx="17" cy="7" r="0.5" fill="currentColor"/></svg>
+          See All Reels on Instagram
+        </a>
+        <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 16px;">@abhitechdecoded • Tech Decoded</p>
+      </div>
+    </section>
+
+
+    <!-- ================================== -->
+    <!-- ========== CONTACT TAB ========== -->
+    <!-- ================================== -->
+    <section class="section" id="section-contact">
+      <div class="section-header">
+        <h2>Get In <span>Touch</span></h2>
+        <p>Have a project idea, collaboration opportunity, or just want to say hi? Let's connect!</p>
+      </div>
+
+      <div class="contact-single">
+        <div class="contact-info-card animate-in delay-1">
+          <h3>Let's Connect 🤝</h3>
+          <p>I'm always excited to explore new collaborations, projects, and creative opportunities. Reach out through any of these channels.</p>
+
+          <div class="contact-links">
+            <a href="https://www.instagram.com/abhitechdecoded/" target="_blank" class="contact-link" id="contact-instagram">
+              <div class="contact-link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 4H8a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4V8a4 4 0 00-4-4z"/><circle cx="12" cy="12" r="3"/><circle cx="17" cy="7" r="0.5" fill="currentColor"/></svg>
+              </div>
+              <div class="contact-link-text">
+                <h4>Instagram</h4>
+                <span>@abhitechdecoded</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/Abhitechdev" target="_blank" class="contact-link" id="contact-github">
+              <div class="contact-link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </div>
+              <div class="contact-link-text">
+                <h4>GitHub</h4>
+                <span>Abhitechdev</span>
+              </div>
+            </a>
+
+            <a href="mailto:abhishek012098@gmail.com" class="contact-link" id="contact-email">
+              <div class="contact-link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div class="contact-link-text">
+                <h4>Email</h4>
+                <span>abhishek012098@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="#" class="contact-link" id="contact-location">
+              <div class="contact-link-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div class="contact-link-text">
+                <h4>Location</h4>
+                <span>India</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2026 <span>Abhishek</span> • Tech Decoded • Built with ⚡ & passion</p>
+    </footer>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+  <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
